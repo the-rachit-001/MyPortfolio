@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: 0.5px;
+    overflow-x: hidden;
+}
+
+
+h1 {
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+}
+h2 {
+    font-family: "Nunito", sans-serif;
+}
+p {
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+}
+a{
+    text-decoration: none;
+}
+.hover-links {
+    font-size: 1.25rem;
+    color: #111111;
+    padding: 0 10px;
+    letter-spacing: 0.5px;
+    position: relative; /* element (which have absolute position will be use top,left.. properties wrt hover-links */
+}
+.hover-links:after { /* create pseudo element after the content of hover links */
+    content: ""; /* create empty element */
+    position: absolute;
+    background-color: #ff3c78;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+.hover-links:hover {
+    color: #4a4a4d;
+}
+
+.hover-links:hover:after {
+    width: 100%;
+}
+.hover-cards {
+    transition: 0.3s ease;
+}
+.hover-cards:hover {
+    transform: translateY(-6px);
+}
+
+.primary-button {
+    display: inline-block; /* transfrom works */
+    border-radius: 10px;
+    background-color: #ff3c78;
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 0 10px #ff3c78;
+    transition: all 0.25s ease;
+}
+.primary-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #FF0018;
+}
+.secondary-button {
+    border: 1px solid #28282B;
+    border-radius: 10px;
+    color: #28282B;
+    padding: 10px;
+    letter-spacing: 0.5px;
+    position: relative;
+    transition: all 0.25s ease;
+}
+.secondary-button:hover {   
+    transform: scale(1.05);
+    color: #4a4a4d;
+    border-color: #4a4a4d;
+}
+
+.zoom-in-effect {
+    display: inline-block; /* behave like inline but allow transform property */
+    color: #111111;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+.zoom-in-effect:hover {
+    transform: scale(1.2);
+    color: #007BFF;
+}
+.container {
+    max-width: 1180px;
+    padding-inline: 15px;
+    margin-inline: auto;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+.section-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-block: 20px;
+}
+
+.navbar {
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+.nav-logo img {
+    width: 120px;
+    transform: translateX(-400px);
+    opacity: 0;
+    animation: slideIn 1s ease  forwards;
+}
+
+
+.nav-links {
+    gap: 30px;
+    transform: translateX(400px);
+    opacity: 0;
+    animation: slideIn 1s ease  forwards;
+}
+
+.search-icon {
+    margin-right: 10px;
+}
+.hero {
+    margin-block: 20px;
+    gap: 40px;
+}
+.header-text {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.header-pic img {
+    width: 30vw;
+    transform: translateX(-400px);
+    opacity: 0;
+    animation: slideIn 1s ease  forwards;
+}
+@keyframes slideIn {
+    to {
+        transform: translatex(0);
+        opacity: 1;
+    }
+}
+.intro {
+    font-size: 1.8rem;
+}
+.social-icon {
+    padding-block: 20px;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+.main-buttons {
+    gap: 40px;
+    margin-top: 10px;
+}
+
+
+.about-section {
+    background-color: #f8f8f5;
+    padding-block: 60px;
+    margin-top: 40px;
+}
+
+
+.about-text {
+    border-left: 4px solid #ff3c78;
+    padding-left: 20px;
+    max-width: 800px;
+    flex-direction: column;
+    gap: 10px;
+}
+.skill-section {
+    padding-block: 60px;
+}
+.skill-cards {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.card {
+    text-align: center;
+}
+
+.card h2 {
+    margin-top: 10px;
+}
+.card img{
+    width: 70px;
+}
+.projects-section {
+    background-color: #f8f8f5;
+    padding: 60px 0;
+}
+.project-cards {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+.pro-card {
+    padding: 20px;
+    background-color: white;
+    max-width: 30%;
+    border-radius: 10px;
+    gap: 20px;
+}
+.pro-card h2 {
+    font-size: 1.4rem;
+    margin-top: 10px;
+}
+.pro-card p {
+    font-size: 1rem;
+}
+.pro-card a {
+    color: #ff3c78;
+    transition: 0.2s ease;
+}
+.pro-card img {
+    width: 300px;
+    border-radius: 10px;
+}
+.project-button-container {
+    text-align: center;
+    margin-top : 40px;
+}
+.contact-section {
+    padding-block: 80px ;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-text {
+    width: 40%;
+}
+
+.contact-text p {
+    padding-block: 20px;
+}
+
+.mail {
+    gap: 40px;
+}
+.icons {
+    margin-top: 20px;
+    gap: 40px;
+}
+.contact-icons {
+    gap: 10px;
+}
+.email-address {
+    color: #ff3c78;
+    text-decoration: underline;
+    padding-block: 2px;
+}
+.email-address:hover {
+    text-shadow: 0 0 10px pink;
+}
+
+.contact-form {
+    width: 40%; 
+    margin-top: 100px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+.email input, .message textarea {
+    width: 100%;
+}
+.contact-form input {
+    height: 30px;
+}
+.email, .message {
+    margin-top: 15px;
+}
+.name {
+    gap: 20px;
+}
+.first-name, .last-name {
+    flex: 1; /* Both boxes should grow equally and share the available horizontal space */
+}
+.first-name input, .last-name input {
+    width: 100%;
+}
+.submit-button {
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+.send-button {
+    padding: 5px 15px;
+    border: none;
+    background-color: #ff3c78;
+    color: white;
+    font-size: 1.1rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.send-button:hover {
+    box-shadow: 0 0 10px red;
+}
+
+
