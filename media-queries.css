@@ -1,0 +1,44 @@
+@media screen and (max-width: 991px){
+    h1 {
+        font-size: 2.2rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+    .nav-links {
+        display: none;
+    }
+    .nav-toggle {
+        display: block;
+        margin-right: 20px;
+        transform: translateX(100%);
+        opacity: 0;
+        animation: slideIn 1s ease  forwards;
+    }
+    .section-heading {
+        font-size: 1.8rem;
+    }
+    .intro {
+        font-size: 1.4rem;
+    }
+    .social-icon i {
+        font-size: 1rem;
+    }
+    .primary-button {
+        padding: 5px;
+    }
+    .secondary-button {
+        padding: 5px;
+    }
+    
+
+}
+@media screen and (max-width: 767px){
+
+}
+@media screen and (max-width: 479px){
+
+}
