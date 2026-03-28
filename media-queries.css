@@ -40,11 +40,18 @@
     .hero {
         flex-direction: column;
     }
-    .header-pic img {
+    .header-pic {
         max-width: 350px;
     }
+    
     .header-text {
         align-items: center;
+    }
+    .header-text h2 {
+        text-align: center;
+    }
+    .header-text p {
+        text-align: center;
     }
     .skill-cards {
         gap: 20px;
@@ -60,5 +67,7 @@
     }
 }
 @media screen and (max-width: 479px){
-
+    .main-buttons {
+        justify-content: center;
+    }
 }

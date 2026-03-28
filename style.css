@@ -153,19 +153,16 @@ a{
     align-items: flex-start;
     gap: 10px;
 }
-.header-text h2 {
-    text-align: center;
-}
-.header-text p {
-    text-align: center;
-}
+
+
 .header-pic {
     flex: 1;
+    max-width: 450px;
+
 }
 
 .header-pic img {
     width: 100%;
-    max-width: 450px;
     transform: translateX(-100%);
     opacity: 0;
     animation: slideIn 1s ease  forwards;
