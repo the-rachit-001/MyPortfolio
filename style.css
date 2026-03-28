@@ -153,6 +153,12 @@ a{
     align-items: flex-start;
     gap: 10px;
 }
+.header-text h2 {
+    text-align: center;
+}
+.header-text p {
+    text-align: center;
+}
 .header-pic {
     flex: 1;
 }
@@ -180,6 +186,8 @@ a{
 .main-buttons {
     gap: 40px;
     margin-top: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 
@@ -202,16 +210,15 @@ a{
 }
 .skill-cards {
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 40px;
     margin-top: 20px;
     justify-content: center;
 }
 .card {
     text-align: center;
     flex: 1;
-    max-width: 120px;
-    min-width: 100px;
-    padding: 10px;
+    max-width: 100px;
+    min-width: 80px;
 }
 
 .card h2 {
@@ -223,6 +230,7 @@ a{
 .projects-section {
     background-color: #f8f8f5;
     padding: 60px 0;
+    overflow-x: hidden;
 }
 .project-cards {
     flex-wrap: wrap;
@@ -257,8 +265,9 @@ a{
     margin-top : 40px;
 }
 .contact-section {
-    padding-block: 80px ;
+    padding: 80px 5%;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .contact-text {
@@ -271,6 +280,7 @@ a{
 
 .mail {
     gap: 40px;
+    flex-wrap: wrap;
 }
 .icons {
     margin-top: 20px;
@@ -291,6 +301,9 @@ a{
 .contact-form {
     flex: 1;
 }
+.contact-form input,textarea {
+    border: 2px solid #FF0018;
+}
 
 .contact-form label {
     display: block;
@@ -307,15 +320,17 @@ a{
 }
 .name {
     gap: 20px;
+    flex-wrap: wrap;
 }
 .first-name, .last-name {
     flex: 1; /* Both boxes should grow equally and share the available horizontal space */
+    min-width: 150px;
 }
 .first-name input, .last-name input {
-    width: 100%;
+    width: 100%;;
 }
 .submit-button {
-    
+    justify-content: flex-end;
     margin-top: 15px;
 }
 .send-button {

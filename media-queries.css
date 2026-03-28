@@ -37,7 +37,27 @@
 
 }
 @media screen and (max-width: 767px){
-
+    .hero {
+        flex-direction: column;
+    }
+    .header-pic img {
+        max-width: 350px;
+    }
+    .header-text {
+        align-items: center;
+    }
+    .skill-cards {
+        gap: 20px;
+    }
+    .mail ,.icons {
+        gap: 20px;
+    }
+    .mail a {
+        font-size: 0.8rem;
+    }
+    .contact-icons {
+        gap: 5px;
+    }
 }
 @media screen and (max-width: 479px){
 
