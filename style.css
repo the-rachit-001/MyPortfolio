@@ -299,9 +299,22 @@ a{
 
 .contact-form {
     flex: 1;
+    min-width: 300px;
+    padding-block: 20px;
 }
 .contact-form input,textarea {
-    border: 2px solid #FF0018;
+    border: 2px solid #ff3c78;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    padding: 10px;
+    transition: 0.2s ease;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #FF0018;
+    box-shadow: 0 0 5px #FF0018;
 }
 
 .contact-form label {
