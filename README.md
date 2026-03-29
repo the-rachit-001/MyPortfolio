@@ -18,7 +18,7 @@ This is my personal portfolio website where I showcase my projects and skills.
 - web3forms API
 
 ## 📸 Preview
-![Preview](./preview.png)
+![Preview](./portfoliopreview.png)
 
 ## 🎯 Future Improvements
 - Add JavaScript
